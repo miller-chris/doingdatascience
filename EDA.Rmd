@@ -1,0 +1,18 @@
+```{r}
+data1 <- read.csv(url("http://stat.columbia.edu/~rachel/datasets/nyt1.csv"))
+```
+
+```{r}
+head(data1)
+```
+
+```{r}
+categories <- cut(data1$Age, c(-Inf,0,18,24,34,44,54,Inf))
+```
+
+```{r}
+head(categories)
+```
+
+
+
